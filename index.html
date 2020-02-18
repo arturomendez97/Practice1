@@ -1,0 +1,265 @@
+
+<!--Dice que version de html es-->
+<!DOCTYPE html>
+
+<!--Accesibilidad, establece el idioma-->
+<html lang="en">
+
+
+<html>
+    <head>
+    <!---Para cosas especiales que se utilizen. Código, frameworks, etc... Para describir la página. Lo que ponemos aquí no se ve en la página.-->
+        <title>
+            Title of page   
+        </title>
+        <!---Incluir keyboard latinoamericano con el meta tag-->
+        <meta charset="UTF-8">
+    </head>
+
+    <body>
+        <!--Unordered list, bullets-->
+        <ul>
+            <li>
+                <a href= "https://google.com">
+                Home
+                </a>
+            </li>
+            <li>
+                <a href= "https://google.com">
+                    About
+                </a>
+            </li>
+            <li>
+                <a href= "https://google.com">
+                    Reviews
+                </a>
+            </li>
+        </ul>
+
+        <!--No poner un paragraph dentro de un header-->
+        <p>
+            This is the sidebar!
+        </p>
+
+        <!---Header va de h1 a h6, bajando de tamaño. Un h1 no debe estár dentro de los demás headers; h2 dentro de h3-h6 y así.-->
+        <h1>
+            Welcome to our menu!
+        </h1>
+
+        <!--Tables-->
+        <table>
+            <!--Specify Columns-->
+            <thead>
+                <tr>
+                    <th>
+                        Food
+                    </th>
+                    <th>
+                        Description
+                    </th>
+                    <th>
+                        Price
+                    </th>
+                </tr>
+            </thead>
+
+            <!--Building rows-->
+            <tbody>
+                <tr>
+                    <td>
+                        Salad
+                    </td>
+                    <td>
+                        Fresh, delicious Cobb Salad
+                    </td>
+                    <td>
+                        $7.99
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Burger
+                    </td>
+                    <td>
+                        1/4 lb grass-fed burger with choice of cheese
+                    </td>
+                    <td>
+                        $6.99
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Chicken Salad Sandwich
+                    </td>
+                    <td>
+                        Our world famous chicken salad on a bagel with homemade prickles
+                    </td>
+                    <td>
+                        $8.99
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Buffalo Chicken Sandwich
+                    </td>
+                    <td>
+                        Spicy fried chicken on a brioche bun
+                    </td>
+                    <td>
+                        $10.99
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Fries
+                    </td>
+                    <td>
+                        Hand cut potatoes lightly fried and seasoned
+                    </td>
+                    <td>
+                        $1.99
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Soda
+                    </td>
+                    <td>
+                        Regular, diet, orange, or root beer
+                    </td>
+                    <td>
+                        $1.00
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!--para que el usuario nos de cosas/datos/inputs-->
+        <form>
+            <fieldset>
+                <!--title-->
+                <legend>
+                    Leave us a comment
+                </legend>
+
+                <!--Separar en bloques-->
+                <div>
+
+                <!--Título o texto para el input-->
+                <!--El for debe matchear con el input-->
+                <label for ="f_name">
+                    First name: 
+                </label>
+
+                <!--Input-->
+                <!--El id se le puede poner a cualquier cosa, pero debe ser único, es opcional.-->
+                <!--Class es para agrupar elementos que tendrán el mismo estilo, es opcional.-->
+                <!--El nombre, también opcional. No conviene repetirlo-->
+                <!--Value es para que ya aparezca un texto-->
+                <input type = "text" id = "f_name" class = "info" name = "f_name"/>
+                 </div>
+                 <div>
+                 <label for ="l_name">
+                    Last name: 
+                </label>
+
+                <!--Input-->
+                <!--El id se le puede poner a cualquier cosa, pero debe ser único, es opcional.-->
+                <!--Class es para agrupar elementos que tendrán el mismo estilo, es opcional.-->
+                <!--El nombre, también opcional. No conviene repetirlo-->
+                <!--Value es para que ya aparezca un texto-->
+                <input type = "text" id = "l_name" class = "info" name = "l_name"/>
+                 </div>
+
+                 <div>
+                     <label for = "email">
+                         Email:
+                     </label>
+
+                    <input type = "email" id = "email" class = "info" name = "email"/>
+                 </div>
+
+                 <div>
+                    <label for = "telefone">
+                        Phone Number:
+                    </label>
+
+                   <input type = "tel" id = "phone_number" class = "info" name = "phone_number"/>
+                </div>
+            
+
+                 <!--Drop down menu-->
+                 <div>
+                     <div>
+                    <label for = "rating">
+                        Rate us:
+                    </label>
+                    </div>
+                    <select id = "rating" name = "rating">
+                        <option value = "very good">
+                            Very good
+                        </option>
+                        <option value = "good">
+                            Good
+                        </option>
+                        <option value = "okay">
+                            Okay
+                        </option>
+                        <option value = "kinda_bad">
+                            Kinda bad
+                        </option>
+                        <option value = "very bad">
+                            Very bad
+                        </option>
+                    </select>
+                </div>
+
+                <div>
+                    <div>
+                    <label for = "comment">
+                        Your comment:
+                    </label>
+                </div>
+                    <!--Lugar grande para escribir-->
+                    <textarea name = "comment">
+
+                    </textarea>
+                </div>
+
+
+                <div>
+                    <!--Radio-->
+                    <div>
+                    <label for = "radio_1">
+                        Would you visit us again?
+                    </label>
+                </div>
+                    <label for= "radio_1">
+                        Yes:
+                    </label>
+
+                    <!--Deben tener el mismo nombre-->
+                    <input type = "radio" value= "yes" id = "radio_1" name = "visit"/>
+                </div>
+                <div>
+                    <!--Radio-->
+                    <label for= "radio_2">
+                        No:
+                    </label>
+
+                    <!--Deben tener el mismo nombre-->
+                    <input type = "radio" value= "no" id = "radio_2" name = "visit"/>
+                </div>
+            
+
+                <button type = "submit">
+                    Submit
+                </button>
+            </fieldset>
+        </form>
+         <!--Span, div para una linea-->
+        <footer>
+            <p>This is where any content in the footer would go</p>
+        </footer>
+    </body>
+</html>
